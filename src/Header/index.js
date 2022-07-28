@@ -5,6 +5,8 @@ function Header(){
     return(
         <header>
             <Link className="brand" to="/"> Movie Flix </Link>
+            <Link className="brand" to="/dashboard"> DashBoard </Link>
+
             <Link className="bookmarks" to="/bookmarks"> My Movies </Link>
         </header>
     )
