@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+}
+
+.brand{
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    color:#e80c0c;
+    font-weight: bold;
+}
+
+.bookmarks{
+    text-decoration: none;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 4px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
