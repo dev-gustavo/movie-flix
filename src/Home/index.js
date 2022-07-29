@@ -38,8 +38,7 @@ function Home(){
 
     return(
         <div className="main">
-            <h1 className='h1'> TOP 10 </h1>
-            <div className="movieList"> {movies.map((movie)=>{
+           <div className="movieList"> {movies.map((movie)=>{
                 return(
                     <article key={movie.id}>
                         <strong>{movie.title}</strong>

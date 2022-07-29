@@ -1,42 +1,8 @@
 .dashbord{
     margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between 10px;
-    max-width: 80%;
-    padding: 0 8px;    
-  
 }
 
 .dashbord div{
-    margin-top: 10px;   
-    margin-left: 10px;
-    width: 300px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
+      
 }
 
-.boxA{
-    background-color: blueviolet;
-    border-radius: 15px;
-    padding: 14px;
-    cursor: pointer;
-    align-items: center;
-    
-}
-.boxB{
-    background-color: blueviolet;
-    border-radius: 15px;
-    padding: 14px;
-    cursor: pointer;
-    
-}
-.boxC{
-    background-color: blueviolet;
-    border-radius: 15px;
-    padding: 14px;
-    cursor: pointer;
-    
-}
