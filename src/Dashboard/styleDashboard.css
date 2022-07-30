@@ -1,8 +1,18 @@
 .dashbord{
     margin: 0 auto;
+    max-width: 90%;
+    display: flexbox;
 }
 
-.dashbord div{
-      
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+
+
 }
 
