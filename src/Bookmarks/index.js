@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import '../Bookmarks/styleBookmarks.css';
 import {Link} from 'react-router-dom'
 import { toast } from 'react-toastify'
+import { Button, Card, Carousel, CarouselItem, Nav } from 'react-bootstrap'
 
 function Bookmarks(){
 
@@ -38,8 +39,10 @@ function Bookmarks(){
                         <li key={movie.id}>
                             <span> {movie.title} </span>
                             <div>
-                                <Link to={`/movie/${movie.id}`}> Details </Link>
-                                <button onClick={()=> deleteMovie(movie.id)}> Delete </button>
+                                <Link className='button1' to={`/movie/${movie.id}`}> DETAILS </Link>
+                                
+                                <Button onClick={()=> deleteMovie(movie.id)}> DELETE </Button>
+                                
                             </div>
                         </li>
                     )

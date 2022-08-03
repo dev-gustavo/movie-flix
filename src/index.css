@@ -3,11 +3,13 @@
   overflow-y: 2300px;
   padding: 0px;
   margin: 0;
+ 
   
 }
 
 body {
   font-family: sans-serif;
+  
 }
 
 .app {
@@ -16,6 +18,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(images/background.jpeg);
+  background: white;
   
 }

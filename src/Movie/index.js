@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import movieApi from '../UrlAPI/movieApi'
 import '../Movie/styleMovie.css'
 import { toast } from 'react-toastify'
@@ -68,23 +68,23 @@ function Movie(){
     return(
         <div className="info">
             <h1>{movie.title}</h1>
+            <div className="buttons">
+                <button onClick={saveMovie} > Save in your list! </button>
+                <button>
+                    <a target="blank" href={`https://youtube.com/results?search_query=${movie.title} Trailer`}>
+                    Watch the trailer
+                    </a>
+                   
+                </button>
+                
+            </div>
             <img src={`http://image.tmdb.org/t/p/original/${movie.backdrop_path}`} /> 
             <h3>Description</h3>
-            <span> Worldwide Release: {movie.release_date}</span>
             <span>{movie.overview}</span>
             
             <strong> Rating: {movie.vote_average} / 10 </strong>
 
-            <div className="buttons">
-                <button onClick={saveMovie} > Save </button>
-                
-                <button>
-                    <a target="blank" href={`https://youtube.com/results?search_query=${movie.title} Trailer`}>
-                    Trailer
-                    </a>
-                   
-                </button>
-            </div>
+           
 
 
         </div>

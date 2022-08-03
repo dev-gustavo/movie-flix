@@ -7,10 +7,11 @@
     padding: 0 8px;
 }
 .info h1{
-    margin: 14px 0;
+    margin: 5px 0;
 }
 
 .info img{
+    margin-top: 10px;
     border-radius: 8px;
     width: 900px;
     max-width: 100%;
@@ -34,6 +35,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.5s;
+    width: 200px;
 }
 
 .buttons button:hover{

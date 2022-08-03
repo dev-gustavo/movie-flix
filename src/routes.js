@@ -6,6 +6,8 @@ import Header from './Header'
 import Error from './ControlErros'
 import Bookmarks from './Bookmarks'
 import Dashboard from './Dashboard'
+import TopRated from './TopRated'
+import UpComing from './UpComing'
 
 
 function RoutesApp(){
@@ -15,6 +17,8 @@ function RoutesApp(){
             <Routes>
                 <Route path="/dashboard" element={ <Dashboard/> }/>
                 <Route path="/" element={ <Home/>      }/>
+                <Route path="/TopRated" element={ <TopRated/> }/>
+                <Route path="/UpComing" element={ <UpComing/> }/>
                 <Route path="/movie/:id" element={ <Movie/> }/>
                 <Route path="/bookmarks" element={ <Bookmarks/> }/>
                 
