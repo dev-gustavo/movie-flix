@@ -21,9 +21,6 @@ function RoutesApp(){
                 <Route path="/UpComing" element={ <UpComing/> }/>
                 <Route path="/movie/:id" element={ <Movie/> }/>
                 <Route path="/bookmarks" element={ <Bookmarks/> }/>
-                
-                
-                
                 <Route path="*" element={<Error/>}/>
             </Routes>
         </BrowserRouter>
