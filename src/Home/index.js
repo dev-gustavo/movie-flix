@@ -10,7 +10,7 @@ function Home(){
     const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true);
 
-    //Toda vez que a aplicacao abrir, ele vai chamar esse comando que vai buscar a API
+    //Every time the application opens, it will call this command that fetches the API
     useEffect(()=>{
         async function loadingMovies(){
            const response = await movieApi.get("movie/now_playing", {
@@ -42,7 +42,9 @@ function Home(){
                 return(
                     <article key={movie.id}>
                         <strong>{movie.title}</strong>
-                        <img src={`http://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title}/>
+                        <img 
+                        src={`http://image.tmdb.org/t/p/original/${movie.poster_path}`} 
+                        alt={movie.title}/>
                         <Link to={`/movie/${movie.id}`}> OPEN </Link>
                     </article>
                 )
